@@ -199,7 +199,7 @@ header{
 	color: red;
 	display: block;
 	font-size: 60px;
-	color: #045787;
+	color: #0457B7;
 }
 .seller .item-title{
 	font-size: 22px;
@@ -398,6 +398,7 @@ header{
 }
 .buyers .container a:hover .item{
 	background-color: #F7F7F7;
+	color: #0457B7;
 }
 /*成功案例模块*/
 .successfulCases{
