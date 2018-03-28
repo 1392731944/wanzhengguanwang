@@ -307,6 +307,14 @@
 		// 		'background-position':'-65px 0'
 		// 	})
 		// })
+		$(window).resize(function() {
+		  var winW = $(window).width()
+		  if (winW <= 992) {
+		  	window.location.href = 'mobile.html'
+		  }else{
+		  	window.location.href = 'pc.html'
+		  }
+		})
 		function sideBarShow() {
 			var windowH = $(window).height()
 			var scroll = $(document).scrollTop()

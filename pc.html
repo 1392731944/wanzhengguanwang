@@ -149,6 +149,7 @@
 		<div class="seller-wrap">
 			<h5 class="seller-title">我是电商<span class="identity">卖家</span></h5>
 			<ul class="item-wrap container">
+				<div class="row">
 				<li class="item col-md-3">
 					<a href="#">
 						<div class="item-content">
@@ -203,6 +204,7 @@
 						</div>
 					</a>
 				</li>
+				</div>
 			</ul>
 			<section>
 				<div id="solution-carousel" class="common-carousel">
@@ -556,6 +558,14 @@
 			})
 		}
 		window.onload = function(){
+			$(window).resize(function() {
+			  var winW = $(window).width()
+			  if (winW <= 992) {
+			  	window.location.href = 'mobile.html'
+			  }else{
+			  	window.location.href = 'pc.html'
+			  }
+			});
 			// 海报轮播配置
 			var winH = $(window).height()
 			$("#fpx-carousel").find("img").css({
