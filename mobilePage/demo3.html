@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="echarts.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://gallery.echartsjs.com/dep/echarts/map/js/world.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" style="width: 100%;height:50vh;"></div>
+    <script>
+        var chart = echarts.init(document.getElementById("main"));
+        /* var data = [
+            {name: '海门', value: 9},
+            {name: '鄂尔多斯', value: 12},
+            {name: '招远', value: 12},
+            {name: '舟山', value: 12},
+            {name: '齐齐哈尔', value: 14}
+        ]
+        var geoCoordMap = {
+            '海门':[121.15,31.89],
+            '鄂尔多斯':[109.781327,39.608266],
+            '招远':[120.38,37.35],
+            '舟山':[122.207216,29.985295],
+            '齐齐哈尔':[123.97,47.33]
+        } */
+        var myData = [
+            {name: '海门', value: [121.15, 31.89, 90]},
+            {name: '鄂尔多斯', value: [109.781327, 39.608266, 120]},
+            {name: '招远', value: [120.38, 37.35, 142]},
+            {name: '舟山', value: [122.207216, 29.985295, 123]},
+            {name:'齐齐哈尔',value:[123.97,47.33,60]}
+        ]
+        option = {
+            title: {
+                subtext:'ok',
+                sublink: 'http://esa.un.org/wpp/Excel-Data/population.htm',
+                left: 'center',
+                top: 'top'
+            },
+            tooltip:{
+                trigger:'item',
+                formatter : function(params) {
+                    var result = params.name;
+                    result += '<div>'+params.value[2]+'平方米</div>'
+                    return result;
+                }
+            },
+            geo:{
+                map: 'world',       // 与引用进来的地图js名字一致
+                roam: true,//缩放
+                itemStyle: {					// 定义样式
+                    normal: {					// 普通状态下的样式
+                        areaColor: '#323c48',
+                        borderColor: '#111'
+                    },
+                    emphasis: {					// 高亮状态下的样式
+                        areaColor: '#2a333d'
+                    }
+                }
+            },
+            visualMap: {
+                type: 'piecewise', // 连续型
+                min: 0,       		// 值域最小值，必须参数
+                max: 200,			// 值域最大值，必须参数
+                calculable: true,	// 是否启用值域漫游
+                inRange: {
+                        color: ['#50a3ba','#eac736','#d94e5d']
+                                    // 指定数值从低到高时的颜色变化
+                },
+                textStyle: {
+                    color: '#fff'	// 值域控件的文本颜色
+                }
+            },
+            backgroundColor: '#404a59',
+            series: [
+                {
+                    name: '仓库信息',
+                    type: 'scatter',
+                    // type: 'effectScatter',
+                    coordinateSystem: 'geo',
+                    data: myData, // series数据内容
+                }
+            ]
+        };
+    chart.setOption(option);
+    </script>
+</body>
+</html>

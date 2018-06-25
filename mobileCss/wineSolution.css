@@ -1,0 +1,1214 @@
+body{
+    padding-top: 0;
+}
+/* 头部开始 */
+.header-container{
+    display: flex;
+    align-items: center;
+    height: 84px;
+    padding-left: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #999;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 11;
+    width: 100vw;
+}
+.header-menu{
+    background: url(../mobileImage/nav_icon.png) no-repeat left center;
+    background-size: cover;
+    width: 23px;
+    height: 16px;
+    margin-right: 10px;
+}
+.option-wrap{
+    margin-top: 70px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ccc;
+    display: none;
+}
+.header-title-normal{
+    color:#4c4c4c;
+    font-size: 2rem;
+    width: 280px;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 10px;
+}
+.header-title{
+    color:#4c4c4c;
+    font-size: 2rem;
+    width: 280px;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 10px;
+    padding-top: 22px;
+}
+.solution-option a.op{
+    display: block;
+    padding: 10px 0 10px 10px;
+    font-size: 1.6rem;
+    color: #666;
+}
+.solution-option a:hover{
+    background-color: #eee;
+}
+/* 头部结束 */
+/* 轮播图 */
+.swiper-container{
+    height: 230px;
+}
+.swiper-slide{
+    background: url(../mobileImage/hj_ban.png) no-repeat center center;
+    background-size: 100%;
+}
+.swiper-pagination{
+    transform: translate3d(0,-40px,0)
+}
+.swiper-pagination-bullet{
+    display: inline-block;
+    width: 16px;
+    height: 2px;
+    border-radius: 1px;
+}
+/* 轮播图结束 */
+.content{
+    background-color: #fff;
+    width: 94%;
+    margin: 0 auto;
+    transform: translateY(-45px);
+    position: relative;
+    z-index: 10;
+}
+.content-item{
+    padding: 10px;
+    margin-bottom: 14px;
+    box-shadow: 0 0 10px #ccc;
+}
+.content-item .item-head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+    padding-top: 20px;
+}
+.content-item .item-head-pic{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: url(../mobileImage/hj_ico_zy.png) no-repeat center center;
+    background-size: cover;
+}
+.content-item .item-head .title{
+    font-size: 1.5rem;
+}
+.content-item .item-head .des{
+    color: #999;
+}
+/* 海外直邮服务 */
+.content-item .lis{
+    color: #4c4c4c;
+    font-size: 1.2rem;
+}
+.content-item .lis:before{
+    content: '';
+    display:inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #EC6C00;
+    border-radius: 50%;
+}
+.pic-wrap{
+    /* background-color: green; */
+    width: 330px;
+    height: 500px;
+    position: relative;
+    margin: 20px auto;
+}
+.pic-wrap .ele{
+    position: absolute;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.directMail .pic-wrap .ele.one{
+    top:0;
+    left: 20px;
+    width: 50px;
+    height: 32px;
+    line-height: 32px;
+    padding: 4px;
+    background-color: #0457B7;
+    text-align: center;
+}
+.directMail .pic-wrap .ele.two{
+    top:16px;
+    left: 80px;
+    width: 70px;
+    height: 10px;
+    background: url(../mobileImage/fa1_lc1_jt1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.directMail .pic-wrap .ele.three{
+    top: 0;
+    left: 150px;
+    padding: 4px 6px;
+    width: 92px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #1491DB;
+}
+.directMail .pic-wrap .ele.four{
+    top:42px;
+    left: 198px;
+    width: 10px;
+    height: 36px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc1_jt2.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.directMail .pic-wrap .ele.five{
+    top: 80px;
+    left: 152px;
+    width: 92px;
+    padding: 6px;
+    background-color: #1491DB;
+}
+.directMail .pic-wrap .ele.six{
+    top:170px;
+    left: 142px;
+    width: 128px;
+    height: 56px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc1_jt3.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.directMail .pic-wrap .ele.seven{
+    top: 230px;
+    left: 80px;
+    width: 110px;
+    height: 32px;
+    line-height: 32px;
+    padding: 6px;
+    background-color: #1491DB;
+}
+.directMail .pic-wrap .ele.eight{
+    top: 230px;
+    left: 214px;
+    width: 90px;
+    padding: 3px;
+    background-color: #1491DB;
+}
+.directMail .pic-wrap .ele.nine{
+    top:276px;
+    left: 140px;
+    width: 128px;
+    height: 112px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc1_jt4.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.directMail .pic-wrap .ele.ten{
+    top: 314px;
+    left: 80px;
+    padding: 6px;
+    width: 110px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #1491DB;
+}
+.directMail .pic-wrap .ele.eleven{
+    top:360px;
+    left: 138px;
+    width: 10px;
+    height: 28px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc1_jt5.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.directMail .pic-wrap .ele.twelve{
+    top: 392px;
+    left: 80px;
+    width: 110px;
+    height: 32px;
+    line-height: 32px;
+    padding: 6px;
+    background-color: #1491DB;
+}
+.directMail .pic-wrap .ele.thirteen{
+    top: 392px;
+    left: 214px;
+    width: 90px;
+    height: 32px;
+    line-height: 32px;
+    padding: 6px 3px;
+    background-color: #1491DB;
+}
+.directMail .pic-wrap .ele.fourteen{
+    top:436px;
+    left: 142px;
+    width: 128px;
+    height: 44px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc1_jt6.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.directMail .pic-wrap .ele.fifteen{
+    top: 40px;
+    left: 50px;
+    width: 162px;
+    height: 442px;
+    background-color: blue;
+    background: url(../mobileImage/fa1_lc1_jt7.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+/* 海外直邮服务结束 */
+/* 海外备货服务 */
+.content-item.readyService .item-head-pic{
+    background: url(../mobileImage/hj_ico_hw.png) no-repeat center center;
+    background-size: cover; 
+}
+.readyService .pic-wrap .ele.one{
+    top: 0;
+    left: 116px;
+    padding: 4px 6px;
+    width: 92px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.two{
+    top:42px;
+    left: 164px;
+    width: 10px;
+    height: 36px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc1_jt2.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.readyService .pic-wrap .ele.three{
+    top: 80px;
+    left: 116px;
+    width: 92px;
+    padding: 6px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.four{
+    top:128px;
+    left: 66px;
+    width: 206px;
+    height: 48px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc2_jt2.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.readyService .pic-wrap .ele.five{
+    top: 178px;
+    left: 32px;
+    width: 60px;
+    padding: 6px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.six{
+    top: 178px;
+    left: 134px;
+    width: 60px;
+    padding: 6px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.seven{
+    top: 178px;
+    left: 232px;
+    width: 60px;
+    padding: 6px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.eight{
+    top:228px;
+    left: 66px;
+    width: 208px;
+    height: 48px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc2_jt3.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.readyService .pic-wrap .ele.nine{
+    top: 278px;
+    left: 66px;
+    width: 90px;
+    padding: 6px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.ten{
+    top: 278px;
+    left: 234px;
+    padding: 6px;
+    width: 60px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.eleven{
+    top:326px;
+    left: 114px;
+    width: 160px;
+    height: 42px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc2_jt4.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.readyService .pic-wrap .ele.twelve{
+    top: 370px;
+    left: 66px;
+    width: 90px;
+    height: 32px;
+    line-height: 32px;
+    padding: 6px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.thirteen{
+    top: 370px;
+    left: 204px;
+    width: 90px;
+    height: 32px;
+    line-height: 32px;
+    padding: 6px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.fourteen{
+    top:416px;
+    left: 116px;
+    width: 158px;
+    height: 56px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc2_jt5.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.readyService .pic-wrap .ele.fifteen{
+    top: 466px;
+    left: 120px;
+    width: 90px;
+    height: 32px;
+    line-height: 32px;
+    padding: 6px;
+    background-color: #1491DB;
+}
+/* 海外备货服务结束 */
+/* 保税备货服务 */
+.content-item.bonded .item-head-pic{
+    background: url(../mobileImage/hj_ico_bs.png) no-repeat center center;
+    background-size: cover; 
+}
+.bonded .pic-wrap{
+    height: 320px;
+}
+.content-item.bonded .ele{
+    font-size: 12px;
+}
+.bonded .pic-wrap .ele.one{
+    top: 0;
+    left: 0;
+    padding: 4px 0px;
+    width: 150px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #1491DB;
+}
+.bonded .pic-wrap .ele.two{
+    top: 0;
+    left: 160px;
+    padding: 4px 0;
+    width: 92px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #1491DB;
+}
+.bonded .pic-wrap .ele.three{
+    top:60px;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc3_gjx.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.bonded .pic-wrap .ele.four{
+    top: -4px;
+    left: 278px;
+    width: 50px;
+    height: 50px;
+    line-height: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 16px;
+    box-sizing: border-box;
+    background-color: #1491DB;
+}
+.bonded .pic-wrap .ele.five{
+    top:15px;
+    left: 126px;
+    width: 152px;
+    height: 140px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc3_jt1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.bonded .pic-wrap .ele.six{
+    top: 156px;
+    left: 122px;
+    z-index: 1;
+    width: 50px;
+    padding: 6px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #1491DB;
+}
+.bonded .pic-wrap .ele.seven{
+    top:40px;
+    left: 164px;
+    width: 66px;
+    height: 186px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc3_jt2.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.bonded .pic-wrap .ele.eight{
+    top: 96px;
+    left: 232px;
+    width: 82px;
+    padding: 6px;
+    background-color: #F5AC3C;
+}
+.bonded .pic-wrap .ele.eight div.col{
+    color: #A66D16;
+}
+.bonded .pic-wrap .ele.nine{
+    top: 164px;
+    left: 232px;
+    width: 82px;
+    height: 20px;
+    line-height: 20px;
+    padding: 6px;
+    background-color: #F5AC3C;
+}
+.bonded .pic-wrap .ele.ten{
+    top: 204px;
+    left: 232px;
+    width: 82px;
+    height: 20px;
+    line-height: 20px;
+    padding: 6px;
+    background-color: #F5AC3C;
+}
+.bonded .pic-wrap .ele.eleven{
+    top:236px;
+    left: 166px;
+    width: 114px;
+    height: 48px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc3_jt3.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.bonded .pic-wrap .ele.twelve{
+    top: 242px;
+    left: 92px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: #1491DB;
+}
+.bonded .pic-wrap .ele.thirteen{
+    top:202px;
+    left: 18px;
+    width: 72px;
+    height: 78px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc3_jt4.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.bonded .pic-wrap .ele.fourteen{
+    top: 156px;
+    left: -6px;
+    padding: 6px 2px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #1491DB;
+}
+.bonded .pic-wrap .ele.fifteen{
+    top:41px;
+    left: -4px;
+    width: 76px;
+    height: 114px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc3_jt5.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.bonded .pic-wrap .ele.sixteen{
+    top: 202px;
+    left: 6px;
+    width: 12px;
+    color: #333;
+    line-height: 13px;
+}
+/* 保税备货服务结束 */
+
+
+/* 综合物流服务开始 */
+.content-item.zhwlServer .item-head-pic{
+   background: url(../mobileImage/hj_ico_zh.png) no-repeat center center;
+   background-size: cover;
+}
+.wine-eight-steps .title{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #6A3825;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.wine-eight-steps .steps-item{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.wine-eight-steps .steps-item .wrap{
+    display: flex;
+    width: 50%;
+    /* background-color: red; */
+}
+.wine-eight-steps .steps-item .wrap.right{
+    justify-content: flex-start;
+    transform: translateX(-22px)
+}
+.wine-eight-steps .steps-item .wrap.left{
+    justify-content: flex-end;
+    transform: translateX(22px)
+}
+.wine-eight-steps .steps-item .circular{
+    width: 44px;
+    height: 44px;
+    background-color: #C3D6ED;
+    border-radius: 50%;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.wine-eight-steps .steps-item .circular .small-circular{
+    width: 30px;
+    height: 30px;
+    background-color:#138ED8;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wine-eight-steps .steps-item .circular .arrow-pic{
+    width: 16px;
+    height: 30px;
+    position: absolute;
+    top: 42px;
+    background: url(../mobileImage/fa1_lc4_jt1.png) no-repeat center center;
+    background-size: cover;
+}
+.wine-eight-steps .steps-item .steps-des{
+    background-color: #D6DBE0;
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.wine-eight-steps .steps-item .wrap.right .steps-des{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+}
+.wine-eight-steps .steps-item .wrap.left .steps-des{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 10px;
+}
+.wine-eight-steps .steps-item .wrap.right .steps-des:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top:10px solid transparent;
+    border-right:10px solid #D6DBE0;
+    border-bottom:10px solid transparent;
+    border-left:10px solid transparent;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+}
+.wine-eight-steps .steps-item .wrap.left .steps-des:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-left:10px solid #D6DBE0;
+    position: absolute;
+    top: 10px;
+    right: -20px;
+}
+
+/* 综合物流服务结束 */
+/* 葡萄酒仓储与包装 */
+.Warehousing{
+    padding-bottom: 40px;
+}
+.content-item.Warehousing .item-head-pic{
+    background: url(../mobileImage/hj_ico_hw.png) no-repeat center center;
+    background-size: cover;
+ }
+.content-item.Warehousing .item-head{
+    margin-bottom: 0;
+}
+.Warehousing .item .tit{
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 50px;
+     color: #fff;
+     font-size: 1.5rem;
+     transform: translateY(30px);
+     margin: 0 auto;
+ }
+.Warehousing .item .libs{
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 30px;
+    padding-top: 30px;
+    padding: 10px;
+}
+.Warehousing .item.henw .tit{
+    background-color: #4ECCB6;
+}
+.Warehousing .item.henw .libs{
+    background-color: #4ECCB6;
+}
+.Warehousing .item.biguang .tit{
+    background-color: #32A23D;
+}
+.Warehousing .item.biguang .libs{
+    background-color: #32A23D;
+}
+.Warehousing .item.tongf .tit{
+    background-color: #FB9C4E;
+}
+.Warehousing .item.tongf .libs{
+    background-color: #FB9C4E;
+}
+.Warehousing .item .libs .li:before{
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+ /* 葡萄酒仓储与包装结束 */
+ /* 菜单弹层 */
+.popUp{
+    width: 78%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color:#fff;
+    display: none;
+}
+.popUp-header{
+    width: 100%;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    background: url(../mobileImage/nav_top_bg.png) no-repeat left center;
+    background-size: cover;
+    font-size: 1.4rem;
+}
+.popUp-header a{
+    color: #8095af;
+}
+.popUp-header .headImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 16px;
+    margin-right: 16px;
+    overflow: hidden;
+}
+.popUp-header .headImg img{
+    width: 100%;
+    height: 100%;
+}
+.popUp-header .login{
+    border-right: 1px solid #8095af;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.popUp-content li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 50px;
+}
+.popUp-content .iconfont{
+    font-size: 1.1rem;
+    color: #666;
+}
+.popUp-content .imgWrap{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.popUp-content li a{
+    color: #4c4c4c;
+    font-size: 1.6rem;
+}
+.popUp-content li:hover{
+    background-color:#EEF2F7;
+}
+.content-footer{
+    border-top: 1px solid #ccc;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.content-footer .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.content-footer .item a{
+    font-size: 1.4rem;
+    color: #999;
+}
+.popUp-content a{
+    display: inline-block;
+    width: 90%;
+}
+/* 菜单弹层结束 */
+@media screen and (max-width: 374px) {
+.header-title{
+    width: 224px;
+}
+/* 海外直邮服务 */
+.pic-wrap{
+    background-color: green;
+    width: auto;
+    height: 450px;
+    position: relative;
+    margin: 20px auto;
+}
+.pic-wrap .ele{
+    position: absolute;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.directMail .pic-wrap .ele.one{
+    top:0;
+    left: 12px;
+    width: 40px;
+    height: 26px;
+    line-height: 26px;
+    padding: 4px;
+    background-color: #0457B7;
+    text-align: center;
+}
+.directMail .pic-wrap .ele.two{
+    top:14px;
+    left: 62px;
+    width: 56px;
+    height: 8px;
+}
+.directMail .pic-wrap .ele.three{
+    top: 0;
+    left: 120px;
+    padding: 4px 6px;
+    width: 92px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #1491DB;
+}
+.directMail .pic-wrap .ele.four{
+    top:36px;
+    left: 166px;
+    width: 8px;
+    height: 29px;
+}
+.directMail .pic-wrap .ele.five{
+    top: 66px;
+    left: 120px;
+    width: 92px;
+    padding: 6px;
+    background-color: #1491DB;
+}
+.directMail .pic-wrap .ele.six{
+    top:130px;
+    left: 120px;
+    width: 102px;
+    height: 45px;
+}
+.directMail .pic-wrap .ele.seven{
+    top: 178px;
+    left: 70px;
+    width: 88px;
+    height: 26px;
+    line-height: 26px;
+    padding: 6px 2px;
+    background-color: #1491DB;
+}
+.directMail .pic-wrap .ele.eight{
+    top: 178px;
+    left: 176px;
+    width: 80px;
+    padding: 3px;
+    background-color: #1491DB;
+}
+.directMail .pic-wrap .ele.nine{
+    top:218px;
+    left: 120px;
+    width: 102px;
+    height: 100px;
+}
+.directMail .pic-wrap .ele.ten{
+    top: 250px;
+    left: 70px;
+    padding: 6px;
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #1491DB;
+}
+.directMail .pic-wrap .ele.eleven{
+    top:290px;
+    left: 118px;
+    width: 10px;
+    height: 28px;
+}
+.directMail .pic-wrap .ele.twelve{
+    top: 320px;
+    left: 70px;
+    width: 88px;
+    height: 26px;
+    line-height: 26px;
+    padding: 6px 2px;
+    background-color: #1491DB;
+}
+.directMail .pic-wrap .ele.thirteen{
+    top: 320px;
+    left: 176px;
+    width: 82px;
+    height: 26px;
+    line-height: 26px;
+    padding: 6px 2px;
+    background-color: #1491DB;
+}
+.directMail .pic-wrap .ele.fourteen{
+    top:360px;
+    left: 123px;
+    width: 98px;
+    height: 35px;
+}
+.directMail .pic-wrap .ele.fifteen{
+    top: 40px;
+    left: 36px;
+    width: 142px;
+    height: 356px;
+}
+/* 海外直邮服务结束 */
+/* 海外备货服务 */
+.readyService .pic-wrap .ele.one{
+    top: 0;
+    left: 100px;
+    padding: 4px 2px;
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.two{
+    top:36px;
+    left: 140px;
+    width: 8px;
+    height: 29px;
+}
+.readyService .pic-wrap .ele.three{
+    top: 68px;
+    left: 100px;
+    width: 74px;
+    padding: 4px 6px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.four{
+    top:106px;
+    left: 62px;
+    width: 165px;
+    height: 40px;
+}
+.readyService .pic-wrap .ele.five{
+    top: 148px;
+    left: 24px;
+    width: 60px;
+    padding: 6px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.six{
+    top: 148px;
+    left: 106px;
+    width: 60px;
+    padding: 6px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.seven{
+    top: 148px;
+    left: 190px;
+    width: 60px;
+    padding: 6px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.eight{
+    top:190px;
+    left: 66px;
+    width: 166px;
+    height: 38px;
+}
+.readyService .pic-wrap .ele.nine{
+    top: 230px;
+    left: 64px;
+    width: 72px;
+    padding: 6px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.ten{
+    top: 230px;
+    left: 190px;
+    padding: 6px;
+    width: 60px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.eleven{
+    top:270px;
+    left: 104px;
+    width: 128px;
+    height: 34px;
+}
+.readyService .pic-wrap .ele.twelve{
+    top: 305px;
+    left: 66px;
+    width: 72px;
+    height: 26px;
+    line-height: 26px;
+    padding: 6px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.thirteen{
+    top: 305px;
+    left: 160px;
+    width: 90px;
+    height: 26px;
+    line-height: 26px;
+    padding: 6px;
+    background-color: #1491DB;
+}
+.readyService .pic-wrap .ele.fourteen{
+    top:345px;
+    left: 116px;
+    width: 126px;
+    height: 45px;
+}
+.readyService .pic-wrap .ele.fifteen{
+    top: 385px;
+    left: 120px;
+    width: 72px;
+    height: 26px;
+    line-height: 26px;
+    padding: 6px;
+    background-color: #1491DB;
+}
+/* 海外备货服务结束 */
+/* 保税备货服务 */
+.bonded .pic-wrap{
+    height: 320px;
+}
+.bonded .pic-wrap .ele.one{
+    top: 0;
+    left: 0;
+    padding: 4px 0px;
+    width: 110px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #1491DB;
+}
+.bonded .pic-wrap .ele.two{
+    top: 0;
+    left: 120px;
+    padding: 4px 0;
+    width: 92px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #1491DB;
+}
+.bonded .pic-wrap .ele.three{
+    top:45px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+}
+.bonded .pic-wrap .ele.four{
+    top: -4px;
+    left: 232px;
+    width: 45px;
+    height: 45px;
+    line-height: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 16px;
+    box-sizing: border-box;
+    background-color: #1491DB;
+}
+.bonded .pic-wrap .ele.five{
+    top:15px;
+    left: 130px;
+    width: 100px;
+    height: 106px;
+}
+.bonded .pic-wrap .ele.six{
+    top: 122px;
+    left: 100px;
+    z-index: 1;
+    width: 40px;
+    padding: 6px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #1491DB;
+}
+.bonded .pic-wrap .ele.seven{
+    top:40px;
+    left: 152px;
+    width: 47px;
+    height: 138px;
+}
+.bonded .pic-wrap .ele.eight{
+    top: 74px;
+    left: 200px;
+    width: 72px;
+    padding: 2px;
+    background-color: #F5AC3C;
+}
+.bonded .pic-wrap .ele.eight div.col{
+    color: #A66D16;
+}
+.bonded .pic-wrap .ele.nine{
+    top: 132px;
+    left: 200px;
+    width: 72px;
+    padding: 2px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #F5AC3C;
+}
+.bonded .pic-wrap .ele.ten{
+    top: 162px;
+    left: 200px;
+    width: 72px;
+    height: 20px;
+    padding: 2px;
+    line-height: 20px;
+    background-color: #F5AC3C;
+}
+.bonded .pic-wrap .ele.eleven{
+    top:236px;
+    left: 166px;
+    width: 114px;
+    height: 48px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc3_jt3.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.bonded .pic-wrap .ele.twelve{
+    top: 242px;
+    left: 92px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: #1491DB;
+}
+.bonded .pic-wrap .ele.thirteen{
+    top:202px;
+    left: 18px;
+    width: 72px;
+    height: 78px;
+    background-color: red;
+    background: url(../mobileImage/fa1_lc3_jt4.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.bonded .pic-wrap .ele.fourteen{
+    top: 122px;
+    left: 0;
+    padding:1px 6px;
+    height: auto;
+    width: 80px;
+    line-height: 18px;
+    background-color: #1491DB;
+    text-align: left;
+}
+.bonded .pic-wrap .ele.fifteen{
+    top:34px;
+    left: -4px;
+    width: 48px;
+    height: 86px;
+}
+.bonded .pic-wrap .ele.sixteen{
+    top: 202px;
+    left: 6px;
+    width: 12px;
+    color: #333;
+    line-height: 13px;
+}
+/* 保税备货服务结束 */
+}

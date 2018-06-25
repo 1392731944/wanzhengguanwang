@@ -1,0 +1,319 @@
+body{
+    /* padding-top: 84px; */
+    padding-top: 10px;
+}
+/* 头部 */
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 84px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #999;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 20;
+    width: 100vw;
+}
+.menu-wrap{
+    display: flex;
+    align-items: center;
+}
+.header-menu{
+    background: url(../mobileImage/nav_icon.png) no-repeat left center;
+    background-size: cover;
+    width: 23px;
+    height: 16px;
+    margin-right: 6px;
+}
+.header-title{
+    color:#4c4c4c;
+    font-size: 2rem;
+    height: 60px;
+    line-height: 60px;
+}
+.search-box{
+    display: flex;
+}
+.search-box input{
+    width: 160px;
+    height: 34px;
+    padding-left: 8px;
+    border: 1px solid #E6E6E6;
+}
+.search-box i.iconfont{
+    width: 36px;
+    height: 36px;
+    background-color: #E6E6E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* 头部结束 */
+.content{
+    background-color: #32393D;
+    padding-bottom: 300px;
+}
+.content .top-pic{
+    width: 100%;
+}
+.sort-pic{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 16px;
+}
+.sort-pic .item{
+    width: 25%;
+}
+.sort-pic .item img{
+    width: 100%;
+}
+.map-wrap{
+    margin-top: 80px;
+}
+.map{
+    position: relative;
+}
+@keyframes myfirst
+{
+from {border-color: red;}
+to {border-color: yellow;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {border-color: red;}
+to {border-color: yellow;}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+from {border-color: red;}
+to {border-color: yellow;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {border-color: red;}
+to {border-color: yellow;}
+}
+.map .posiPic-wrap{
+    position: absolute;
+    width: 18vw;
+    /* border: 4px solid green; */
+    border-radius: 50%;
+}
+.map .posiPic-wrap img{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 50%;
+    /* animation: myfirst 1s linear 0.01s infinite alternate;
+    -moz-animation: myfirst 1s linear 0.01s infinite alternate;	
+    -webkit-animation: myfirst 1s linear 0.01s infinite alternate;	
+    -o-animation: myfirst 1s linear 0.01s infinite alternate; */
+}
+.map .posiPic-wrap.active img{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+}
+.map .posiPic-wrap .tips{
+    width: 85px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    text-align: center;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    color: #ccc;
+    background-color:rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.map .posiPic-wrap .des{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: 999;
+    width: 200px;
+    min-height: 80px;
+    padding:5px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255,0.8);
+    line-height: 20px;
+    display: none;
+}
+.map .posiPic-wrap .des .title{
+    border-bottom: 1px dotted #ccc;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.map .posiPic-wrap .des:after{
+    content:'';
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 10px solid rgba(255, 255, 255,0.8);
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    left: 35px;
+    bottom: -19px;
+}
+.map .posiPic-wrap.bm{
+    width: 80px;
+    left: 6.57vw;
+    top: 0;
+}
+
+.map .posiPic-wrap.oz{
+    width: 76px;
+    left: 40.28vw;
+    top: 0;
+}
+.map .posiPic-wrap.oz .des{
+    left: -74px;
+}
+.map .posiPic-wrap.oz .des:after{
+    left: 100px;
+}
+
+.map .posiPic-wrap.rh{
+    width: 60px;
+    left: 77.14vw;
+    top: 0;
+}
+.map .posiPic-wrap.rh .des{
+    left: -150px;
+}
+.map .posiPic-wrap.rh .tips{
+    left: -20px;
+}
+.map .posiPic-wrap.rh .des:after{
+    left: 160px;
+}
+.map .posiPic-wrap.cn{
+    width: 60px;
+    left: 64.74vw;
+    top: 42px;
+}
+.map .posiPic-wrap.dny{
+    width: 60px;
+    left: 69.88vw;
+    top: 80px;
+}
+.map .posiPic-wrap.dny .des{
+    left: -124px;
+}
+.map .posiPic-wrap.dny .tips{
+    left: -20px;
+}
+.map .posiPic-wrap.dny .des:after{
+    left: 144px;
+}
+.map .posiPic-wrap.ox{
+    width: 66px;
+    left: 78.71vw;
+    top: 130px;
+}
+.map .posiPic-wrap.ox .des{
+    left: -148px;
+    
+}
+.map .posiPic-wrap.ox .tips{
+    left: -20px;
+}
+.map .posiPic-wrap.ox .des:after{
+    left: 168px;
+}
+.map img{
+    width: 100%;
+}
+/* 弹层菜单 */
+.popUp{
+    width: 78%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color:#fff;
+    display: none;
+}
+.popUp-header{
+    width: 100%;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    background: url(../mobileImage/nav_top_bg.png) no-repeat left center;
+    background-size: cover;
+    font-size: 1.4rem;
+}
+.popUp-header a{
+    color: #8095af;
+}
+.popUp-header .headImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 16px;
+    margin-right: 16px;
+    overflow: hidden;
+}
+.popUp-header .headImg img{
+    width: 100%;
+    height: 100%;
+}
+.popUp-header .login{
+    border-right: 1px solid #8095af;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.popUp-content li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 50px;
+}
+.popUp-content .iconfont{
+    font-size: 1.1rem;
+    color: #666;
+}
+.popUp-content .imgWrap{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.popUp-content li a{
+    color: #4c4c4c;
+    font-size: 1.6rem;
+}
+.popUp-content li:hover{
+    background-color:#EEF2F7;
+}
+.content-footer{
+    border-top: 1px solid #ccc;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.content-footer .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.content-footer .item a{
+    font-size: 1.4rem;
+    color: #999;
+}
+.popUp-content a{
+    display: inline-block;
+    width: 90%;
+}
+/* 弹层菜单结束 */
